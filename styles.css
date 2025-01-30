@@ -1,0 +1,250 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.logo img {
+    width: 180px; /* Adjust the size as needed */
+    height: auto;
+    border-radius: 52px;
+}
+
+h1, h2 {
+    color: #f7f3f0;
+}
+
+h2 {
+    color: #151412;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, #0b0131, #150164);
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Tools Section */
+.tools-section {
+    background: #fff;
+    padding: 40px 0;
+}
+
+.tools-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.tools-section ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.tools-section li {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.tools-section i {
+    margin-right: 10px;
+    color: #3498db;
+}
+
+/* Workflow Section */
+.workflow-section {
+    background: #161640; /* Dark blue background */
+    padding: 40px 0;
+}
+
+.workflow-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff; /* White text for contrast */
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(135deg, #163f6b, #db437a); /* Slightly lighter dark blue for contrast */
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.step-icon {
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.step-description {
+    flex: 1;
+}
+
+.step-description h3 {
+    color: #fff; /* White text for contrast */
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.step-description p {
+    font-size: 1rem;
+    color: #ccc; /* Light gray text for better readability */
+    line-height: 1.6;
+}
+
+.step-image {
+    flex: 1;
+    text-align: right;
+}
+
+.step-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tool-icon {
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    vertical-align: middle; /* Aligns the image with the text */
+    margin-right: 5px; /* Adds spacing between the image and text */
+}
+
+/* Footer */
+.footer {
+    padding: 20px 0;
+    background-color: #19161e; /* Dark background */
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 180px; /* Adjust the size as needed */
+    height: auto;
+    border-radius: 52px;
+}
+
+.footer-text-container {
+    margin-left: 20px; /* Space between logo and text */
+}
+
+.footer-text {
+    margin: 0;
+}
+
+.footer-tagline {
+    font-size: 0.8em; /* Makes the text smaller */
+    color: #f2eaea; /* Optional: change the text color for the tagline */
+    margin-top: 5px;
+}
+
+
+.footer-left-content {
+    text-align: left;
+}
+
+.footer-right-content {
+    text-align: right;
+    margin-top: -50px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin-right: 20px; /* Adjust space between links */
+}
+
+.social-media {
+    margin-top: -150px;
+    margin-bottom: 50px;
+}
+.social-icon {
+    margin-right: 20px; /* Adjust space between icons if needed */
+    color: white; /* Adjust color as needed */
+    font-size: 30px; /* Increase the size of the icon */
+    display: inline-block; /* Ensure the icons are displayed inline */
+    text-align: center; /* Center icons in their container */
+}
+/* Logout Button Container */
+.logout-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* Logout Button Styling */
+.logout-button {
+    background-color: #ff4d4d; /* Red color for logout */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #cc0000; /* Darker red on hover */
+}

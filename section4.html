@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Rating Score Generation</title>
+    <link rel="stylesheet" href="section4style.css"> <!-- Link to the new CSS file -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="https://btrnsfrmd.com/" target="_blank">
+                    <img src="images/BTLOGOwhite.png" alt="Company Logo">
+                </a>
+            </div>
+            <!-- Homepage Button -->
+            <div class="homepage-button">
+                <button onclick="goToHomepage()" class="homepage-btn">Homepage</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="workflow-section">
+        <div class="container">
+            <h2>Credit Rating Score Generation</h2>
+            <div class="step">
+                <div class="step-icon">
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="step-description">
+                    <h3>1. Credit Rating Score Overview</h3>
+                    <p>
+                        Credit rating scores are used to assess the creditworthiness of customers based on their financial behavior and history. 
+                        These scores help in making informed decisions about lending, risk management, and customer segmentation. 
+                        Microsoft Fabric provides tools to calculate and analyze credit rating scores efficiently.
+                    </p>
+                </div>
+                <div class="step-image">
+                    <img src="images/creditscorerating.png" alt="Credit Rating Score Overview">
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-icon">
+                    <i class="fas fa-calculator"></i>
+                </div>
+                <div class="step-description">
+                    <h3>2. Scoring Models</h3>
+                    <p>
+                        Scoring models are used to calculate credit rating scores based on predefined conditions and rules. 
+                        These models incorporate factors like payment history, outstanding debt, and credit utilization. 
+                        Microsoft Fabric's integration with Python and Power BI allows for the creation and customization of scoring models.
+                    </p>
+                </div>
+                <div class="step-image">
+                    <img src="images/ScrMdl.png" alt="Scoring Models">
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-icon">
+                    <i class="fas fa-file-alt"></i>
+                </div>
+                <div class="step-description">
+                    <h3>3. Reporting and Insights</h3>
+                    <p>
+                        Once credit rating scores are generated, they can be visualized and analyzed using Power BI dashboards. 
+                        These reports provide actionable insights for risk assessment, customer segmentation, and decision-making. 
+                        Microsoft Fabric's integration with Power BI ensures real-time and interactive reporting.
+                    </p>
+                </div>
+                <div class="step-image">
+                    <img src="images/creditpowerbi.png" alt="Reporting and Insights">
+                </div>
+            </div>
+        </div>
+        <!-- Button to redirect to section2.html -->
+        <div class="next-section-button">
+            <button onclick="goToSection2()" class="next-section-btn">Next Section</button>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p class="footer-text">&copy; 2025 B-TRNSFRMD Consulting LLC. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    // Function to redirect to the homepage (index.html)
+    function goToHomepage() {
+        window.location.href = 'index.html';
+    }
+
+    // Function to redirect to section2.html
+    function goToSection2() {
+        window.location.href = 'section5.html';
+    }
+</script>
+</body>
+</html>

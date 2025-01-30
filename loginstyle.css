@@ -1,0 +1,140 @@
+/* General Styles */
+html, body {
+    height: 100%; /* Ensure the body takes up the full height of the viewport */
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column; /* Stack header, main, and footer vertically */
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, #0b0131, #150164);
+    padding: 10px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: flex-start; /* Align logo to the left */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 0px;
+}
+
+.header .logo img {
+    height: 80px;
+    margin-left: -80px;
+}
+
+/* Main Content */
+.main-container {
+    flex: 1; /* Allow main content to grow and take up remaining space */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.left-section {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.left-section h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0b0d0f;
+    margin-bottom: 50px;
+}
+
+.left-section p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.right-section {
+    flex: 1;
+    max-width: 400px;
+}
+
+/* Login Form */
+.login-container {
+    background: white;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #15025b;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #007bff;
+}
+
+button {
+    width: 107%;
+    padding: 10px;
+    background-color: #160264;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #98255b;
+}
+
+/* Footer */
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    flex-shrink: 0; /* Prevent footer from shrinking */
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer .footer-text {
+    margin: 0; /* Ensure no extra margin */
+    font-size: 0.9rem;
+}

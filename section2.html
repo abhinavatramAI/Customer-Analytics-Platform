@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Transformation and Derived Variable Creation</title>
+    <link rel="stylesheet" href="section2style.css"> <!-- Link to the new CSS file -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="https://btrnsfrmd.com/" target="_blank">
+                    <img src="images/BTLOGOwhite.png" alt="Company Logo">
+                </a>
+            </div>
+            <!-- Homepage Button -->
+            <div class="homepage-button">
+                <button onclick="goToHomepage()" class="homepage-btn">Homepage</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="workflow-section">
+        <div class="container">
+            <h2>Data Transformation and Derived Variable Creation</h2>
+            <div class="step">
+                <div class="step-icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <div class="step-description">
+                    <h3>1. Data Transformation</h3>
+                    <p>
+                        The process of converting raw, unstructured data into a well-organized format optimized for analysis. 
+                        In Microsoft Fabric, this includes cleansing, standardizing, and restructuring data while incorporating business logic.
+                        Jupyter Notebooks ensuring consistency and efficiency in data processing.
+                    </p>
+                </div>
+                <div class="step-image">
+                    <img src="images/Transformation.png" alt="Data Transformation">
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="step-description">
+                    <h3>2. Derived Variable Creation</h3>
+                    <p>
+                        The generation of new data attributes by applying calculations, transformations, or aggregations to existing fields. 
+                        These variables enhance analytical depth, uncover hidden patterns, and enabling more meaningful insights into customer behavior.
+                    </p>
+                </div>
+                <div class="step-image">
+                    <img src="images/derived variables.png" alt="Derived Variable Creation">
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-icon">
+                    <i class="fas fa-tasks"></i>
+                </div>
+                <div class="step-description">
+                    <h3>3. Data Aggregation</h3>
+                    <p>
+                        The consolidation of granular data points into summarized metrics, providing a holistic overview for strategic decision-making. 
+                        In Microsoft Fabric, large-scale aggregations are performed efficiently, enabling customer-level analysis and facilitating data-driven business intelligence.
+                    </p>
+                </div>
+                <div class="step-image">
+                    <img src="images/dataagg.png" alt="Data Aggregation">
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <div class="step-description">
+                    <h3>4. Data Validation</h3>
+                    <p>
+                        Data validation ensures that the transformed data is accurate and consistent. 
+                        This involves checking for errors, outliers, and inconsistencies. 
+                        Microsoft Fabric provides tools to validate data before it is used for analysis.
+                    </p>
+                </div>
+                <div class="step-image">
+                    <img src="images/Data Validation.png" alt="Data Validation">
+                </div>
+            </div>
+        </div>
+        <!-- Button to redirect to section2.html -->
+        <div class="next-section-button">
+            <button onclick="goToSection2()" class="next-section-btn">Next Section</button>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p class="footer-text">&copy; 2025 B-TRNSFRMD Consulting LLC. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    // Function to redirect to the homepage (index.html)
+    function goToHomepage() {
+        window.location.href = 'index.html';
+    }
+
+    // Function to redirect to section2.html
+    function goToSection2() {
+        window.location.href = 'section3.html';
+    }
+</script>
+</body>
+</html>

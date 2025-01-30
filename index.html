@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Analytics Platform</title>
+    <link rel="icon" href="images/Blogo.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <script>
+        // Simple check to see if the user is logged in
+        const isLoggedIn = localStorage.getItem('isLoggedIn');
+        if (!isLoggedIn) {
+            window.location.href = 'login.html';
+        }
+    </script>
+    <header class="header">
+        <div class="container">
+            <!-- Add the logo here -->
+            <div class="logo">
+                <a href="https://btrnsfrmd.com/" target="_blank">
+                    <img src="images/BTLOGOwhite.png" alt="Company Logo">
+                </a>
+            </div>
+            <h1>Customer Analytics Platform for Banks & Credit Unions </h1>
+            <p>Get key Insights on your customers by using Analytics Segmentation and Model</p>
+        </div>
+        <div class="logout-container">
+            <button onclick="logout()" class="logout-button">Logout</button>
+        </div>
+    </header>
+    <script>
+        function logout() {
+            // Remove the isLoggedIn flag from localStorage
+            localStorage.removeItem('isLoggedIn');
+            
+            // Redirect to login.html
+            window.location.href = 'login.html';
+        }
+    </script>
+
+    <section class="tools-section">
+        <div class="container">
+            <h2>Tools and Technologies Used</h2>
+            <ul>
+                <li><img src="images/fabric.png" alt="Microsoft Fabric" class="tool-icon"> Microsoft Fabric</li>
+                <li><i class="fas fa-code"></i> Jupyter Notebooks</li>
+                <li><img src="images/powerBI.png" alt="Power BI" class="tool-icon"> Power BI</li>
+                <li><img src="images/onelakelogo.png" alt="Data Lake" class="tool-icon"> Fabric Data Lake</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="workflow-section">
+        <div class="container">
+            <h2>Workflow</h2>
+            <div class="step">
+                <div class="step-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <div class="step-description">
+                    <h3>1. Data Loading and Preparation</h3>
+                    <p><a href="section1.html" style="color: white; text-decoration: none;">The Fabric workspace stores data in a secure, scalable, and centralized environment. It integrates with the Data Lake for seamless access and management.</a></p>
+                </div>
+                <div class="step-image">
+                    <img src="images/onelake.png" alt="Data Loading and Preparation">
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <div class="step-description">
+                    <h3>2. Data Transformation and Derived Variable Creation</h3>
+                    <p><a href="section2.html" style="color: white; text-decoration: none;">Utilize Jupyter Notebooks to transform and structure data at the customer level. Apply data cleaning, aggregation, and transformation techniques for improved analysis.</a></p>
+                </div>
+                <div class="step-image">
+                    <img src="images/Transformation.png" alt="Data Transformation">
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-icon">
+                    <i class="fas fa-chart-pie"></i>
+                </div>
+                <div class="step-description">
+                    <h3>3. RFM Scoring and K-Means Clustering Implementation</h3>
+                    <p><a href="section3.html" style="color: white; text-decoration: none;">Segment the dataset into meaningful groups by applying RFM (Recency, Frequency, Monetary) scoring. Implement k-means clustering to identify distinct customer segments based on behavior.</a></p>
+                </div>
+                <div class="step-image">
+                    <img src="images/clustering.png" alt="RFM Scoring and Clustering">
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-icon">
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="step-description">
+                    <h3>4. Credit Rating Score Generation</h3>
+                    <p><a href="section4.html" style="color: white; text-decoration: none;">Generate credit rating scores for customers by applying predefined conditions and scoring models. Incorporate relevant financial data and behavior patterns to assess creditworthiness.</a></p>
+                </div>
+                <div class="step-image">
+                    <img src="images/ratingscore.png" alt="Credit Rating Score">
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-icon">
+                    <i class="fas fa-cloud"></i>
+                </div>
+                <div class="step-description">
+                    <h3>5. Output Storage in Microsoft Fabric Data Lake</h3>
+                    <p><a href="section5.html" style="color: white; text-decoration: none;">Store processed data in a structured format to ensure seamless integration with Power BI. Maintain data integrity and optimize schema design for efficient reporting.</a></p>
+                </div>
+                <div class="step-image">
+                    <img src="images/warehouse.png" alt="Fabric Data Lake">
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-icon">
+                    <i class="fas fa-tachometer-alt"></i>
+                </div>
+                <div class="step-description">
+                    <h3>6. Power BI Dashboard Development</h3>
+                    <p><a href="https://app.fabric.microsoft.com/Redirect?action=OpenApp&appId=7e8f59c6-ca4d-40dd-bbd2-2125af408978&ctid=c9c17f04-6109-4571-8b35-f9c3635f74b3&experience=power-bi" style="color: white; text-decoration: none;" target="_blank" rel="noopener noreferrer">Create interactive dashboards for data visualization and insights by connecting datasets from Fabric Data Lake to Power BI.</a></p>
+                </div>
+                <div class="step-image">
+                    <img src="images/dashboards.png" alt="Power BI Dashboard">
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-icon">
+                    <i class="fas fa-share-square"></i>
+                </div>
+                <div class="step-description">
+                    <h3>7. Publishing Dashboards in Microsoft Fabric Workspace</h3>
+                    <p><a href="https://app.fabric.microsoft.com/Redirect?action=OpenApp&appId=7e8f59c6-ca4d-40dd-bbd2-2125af408978&ctid=c9c17f04-6109-4571-8b35-f9c3635f74b3&experience=power-bi" style="color: white; text-decoration: none;" target="_blank" rel="noopener noreferrer">Publish dashboards to the Microsoft Fabric workspace, enabling secure access for authorized users. Ensure data visualization aligns with business goals and user requirements.</a></p>
+                </div>
+                <div class="step-image">
+                    <img src="images/powerbiworkspace.png" alt="Publishing Dashboards">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <a href="https://btrnsfrmd.com/" target="_blank">
+                        <img src="images/BTLOGOwhite.png" alt="B-TRNSFRMD Logo" class="footer-logo">
+                    </a>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-left-content">
+                        <p class="footer-text">&copy; 2024 B-TRNSFRMD Consulting LLC. All rights reserved.</p>
+                        <p class="footer-tagline">"A Proud Plano, TX Company"</p>
+                    </div>   
+                    <div class="footer-right-content">
+                        <div class="social-media">
+                            <a href="https://www.linkedin.com/company/btrnsfrmd/posts/?feedView=all" target="_blank" class="social-icon" style="color: white;">
+                                <i class="fab fa-linkedin"></i> <!-- LinkedIn Icon -->
+                            </a>
+                            <a href="https://x.com/i/flow/login?redirect_after_login=%2Fbtrnsfrmd" target="_blank" class="social-icon" style="color: white;">
+                                <i class="fab fa-twitter"></i> <!-- Twitter Icon -->
+                            </a>
+                        </div>
+                        <ul class="footer-links">
+                            <li><a href="https://btrnsfrmd.com/cookie-disclosure/" style="color: white; text-decoration: none;">Cookie Disclosure</a></li>
+                            <li><a href="https://btrnsfrmd.com/privacy-policy/" style="color: white; text-decoration: none;">Privacy Policy</a></li>
+                            <li><a href="https://btrnsfrmd.com/dont-sell-my-information/" style="color: white; text-decoration: none;">Do not sell my information</a></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>

@@ -1,0 +1,181 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Consistent background color */
+    color: #333;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, #0b0131, #150164);
+    padding: 10px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header .logo img {
+    height: 80px;
+    margin-left: -80px;
+}
+
+/* Main Content */
+/* Workflow Section */
+.workflow-section {
+    background: #f9f9fc; /* Light background */
+    padding: 40px 0;
+}
+
+.workflow-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #0c0c0c; /* Dark text for contrast */
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #050505; /* Add a border to the step */
+}
+
+.step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Different background colors for each step */
+.step:nth-child(1) {
+    background: linear-gradient(135deg, #156fab, #2c3e50); /* Blue gradient for the first step */
+}
+
+.step:nth-child(2) {
+    background: linear-gradient(135deg, #602b25, #f0ebea); /* Red gradient for the second step */
+}
+
+.step:nth-child(3) {
+    background: linear-gradient(135deg, #132f5c, #f3f7f5); /* Green gradient for the third step */
+}
+
+.step:nth-child(4) {
+    background: linear-gradient(135deg, #8a1e4b, #f6f3f7); /* Purple gradient for the fourth step */
+}
+
+.step-icon {
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.step-description {
+    flex: 1;
+}
+
+.step-description h3 {
+    color: #fff; /* White text for contrast */
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.step-description p {
+    font-size: 1rem;
+    color: #ccc; /* Light gray text for better readability */
+    line-height: 1.6;
+}
+
+.step-image {
+    flex: 1;
+    text-align: right;
+}
+
+.step-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer .footer-text {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Homepage Button */
+.homepage-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.homepage-btn {
+    background-color: #160264; /* Consistent with the theme */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.homepage-btn:hover {
+    background-color: #98255b; /* Hover effect */
+}
+.next-section-button {
+    text-align: right;
+    margin-top: 20px; /* Adjust spacing as needed */
+    margin-bottom: -20px; /* Adjust spacing as needed */
+}
+
+.next-section-btn {
+    background-color: #290451; /* Red background */
+    color: rgb(247, 245, 245); /* Black font color */
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px; /* Rounded corners */
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.next-section-btn:hover {
+    background-color: #97154d; /* Darker red on hover */
+}

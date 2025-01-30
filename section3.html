@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RFM Scoring and K-Means Clustering Implementation</title>
+    <link rel="stylesheet" href="section3style.css"> <!-- Link to the new CSS file -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="https://btrnsfrmd.com/" target="_blank">
+                    <img src="images/BTLOGOwhite.png" alt="Company Logo">
+                </a>
+            </div>
+            <!-- Homepage Button -->
+            <div class="homepage-button">
+                <button onclick="goToHomepage()" class="homepage-btn">Homepage</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="workflow-section">
+        <div class="container">
+            <h2>RFM Scoring and K-Means Clustering Implementation</h2>
+            <div class="step">
+                <div class="step-icon">
+                    <i class="fas fa-chart-pie"></i>
+                </div>
+                <div class="step-description">
+                    <h3>1. RFM Scoring</h3>
+                    <p>
+                        RFM (Recency, Frequency, Monetary) scoring is a technique used to segment customers based on their purchasing behavior. 
+                        Recency measures how recently a customer made a purchase, Frequency measures how often they purchase, and Monetary measures how much they spend. 
+                        Microsoft Fabric's integration with Python and Power BI allows for easy calculation and visualization of RFM scores.
+                    </p>
+                </div>
+                <div class="step-image">
+                    <img src="images/RFM.png" alt="RFM Scoring">
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-icon">
+                    <i class="fas fa-project-diagram"></i>
+                </div>
+                <div class="step-description">
+                    <h3>2. K-Means Clustering</h3>
+                    <p>
+                        K-Means clustering is an unsupervised machine learning algorithm used to group customers into distinct segments based on their behavior. 
+                        In Microsoft Fabric, you can use Jupyter Notebooks to implement K-Means clustering and analyze customer segments. 
+                        This helps in identifying high-value customers, at-risk customers, and other behavioral patterns.
+                    </p>
+                </div>
+                <div class="step-image">
+                    <img src="images/KMEANS.png" alt="K-Means Clustering">
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="step-description">
+                    <h3>3. Customer Segmentation</h3>
+                    <p>
+                        Customer segmentation involves dividing customers into groups based on their behavior, demographics, or other characteristics. 
+                        Using RFM scores and K-Means clustering, you can create actionable customer segments. 
+                        Microsoft Fabric's Power BI integration allows for interactive dashboards to visualize and analyze these segments.
+                    </p>
+                </div>
+                <div class="step-image">
+                    <img src="images/clusterRFM.png" alt="Customer Segmentation">
+                </div>
+            </div>
+        </div>
+        <!-- Button to redirect to section2.html -->
+        <div class="next-section-button">
+            <button onclick="goToSection2()" class="next-section-btn">Next Section</button>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p class="footer-text">&copy; 2025 B-TRNSFRMD Consulting LLC. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    // Function to redirect to the homepage (index.html)
+    function goToHomepage() {
+        window.location.href = 'index.html';
+    }
+
+    // Function to redirect to section2.html
+    function goToSection2() {
+        window.location.href = 'section4.html';
+    }
+</script>
+</body>
+</html>
